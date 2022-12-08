@@ -23,21 +23,28 @@ internal class Day01Test {
         val day01 = Day01()
 
         val calories = listOf(
-            "5229",
+            "5229", // sum 6250
             "1021",
             "",
-            "2051",
+            "2051", // sum 9089
             "4766",
             "2272",
             "",
-            "5810",
+            "5810", // sum 14930
             "4688",
             "2324",
             "2108",
+            "",
+            "4075", // sum 21256
+            "3956",
+            "6688",
+            "4293",
+            "2244"
         )
         // Act
         val countHighestCalories = day01.countHighestCaloriesForThreeElves(calories)
+
         // Assert
-        assertThat(countHighestCalories).isEqualTo(30269)
+        assertThat(countHighestCalories).isEqualTo(45275)
     }
 }

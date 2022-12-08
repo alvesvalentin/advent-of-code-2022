@@ -30,6 +30,7 @@ class Day01 {
         }.also { maxCaloriesPerElf.add(highestCaloriesPerElf) }
 
         return maxCaloriesPerElf
+            .sortedDescending()
             .take(3)
             .sum()
     }

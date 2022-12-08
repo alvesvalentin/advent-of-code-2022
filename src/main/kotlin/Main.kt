@@ -1,6 +1,6 @@
 import day01.Day01
 
-fun main(args: Array<String>) {
+fun main() {
     val day01 = Day01()
     val readFile = ReadFile()
 

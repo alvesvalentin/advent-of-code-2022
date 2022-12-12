@@ -4,8 +4,8 @@ import java.net.URL
 
 class ReadFile {
 
-    operator fun invoke(): List<String> {
-        val inputStream: InputStream? = this.javaClass.getResource("data-day01.txt")?.openStream()
+    operator fun invoke(fileName: String): List<String> {
+        val inputStream: InputStream? = this.javaClass.getResource(fileName)?.openStream()
 
 
         return inputStream!!.bufferedReader().readLines()
